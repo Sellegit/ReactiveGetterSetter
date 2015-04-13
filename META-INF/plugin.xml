@@ -1,0 +1,48 @@
+<idea-plugin version="2">
+  <id>com.sudodev.intellij.reactiveaccessor</id>
+  <name>Reactive Accessor Generation</name>
+  <version>1.0</version>
+  <vendor email="support@sudodev.com" url="http://www.sudodev.com">Sudodev</vendor>
+
+  <description><![CDATA[
+      Generate reactive accessors.
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+    <component>
+      <implementation-class>com.sudodev.intellij.reactiveaccessor.PluginRegistration</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!--<action class="com.sudodev.intellij.reactiveaccessor.AccessorAction"
+            id="com.sudodev.intellij.reactiveaccessor.AccessorAction"
+            text="Reactive Accessors"
+            description="Generates reactive accessors">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>-->
+  </actions>
+
+</idea-plugin>
